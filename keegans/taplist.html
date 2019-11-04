@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TAP LIST</title>
+    <link rel="shortcut icon" href="img/favicon-k.ico"/>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: #000000;
+            overflow: visible;
+        }
+        h1{
+            font-family:Inconsolata;
+            font-size:45px;
+            color: white;
+            font-weight: normal;
+            text-align:center;
+            color:white;
+        }
+
+        h2 {
+            font-family: Montserrat;
+            font-size: 20px;
+            color: white;
+            font-weight: normal;
+        }
+        h3{
+            font-family: Montserrat;
+            font-size: 15px;
+            color:white;
+            font-weight:lighter;
+            text-align:center;
+        }
+
+        p {
+            font-family: Montserrat;
+            font-size: 15px;
+            color: white;
+            font-weight: lighter;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #1c1c1c;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+            z-index:3;
+        }
+        .img-container {
+            text-align: center;
+            display: block;
+            padding: 10px;
+            z-index:2;
+        }
+        .container {
+            position: absolute;
+            width: auto;
+            top: 10px;
+            left: 290px;
+            right: 100px;
+            font-size: 30px;
+            font-family: Inconsolata;
+            font-weight: normal;
+            padding-top: 28px;
+        }
+        .img-container a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            text-decoration: none;
+            padding-left: 100px;
+            padding-right: 30px;
+
+        }
+        .img-container a:hover {
+            color: #F8EF32;
+        }
+        .img-container a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .button {
+            width: 175px;
+            height: 35px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 35px;
+            font-family: Inconsolata;
+            font-size: 30px;
+            color: white;
+            top: 85px;
+            position: absolute;
+            z-index:1;
+            margin: 0 auto;
+            background-color: #545E1C;
+        }
+        #foodmenu-button {
+            left: 630px;
+        }
+        .button:hover {
+            text-decoration: none;
+            color: #F8EF32;
+            cursor: pointer;
+        }
+        .button:active {
+            text-decoration: none;
+            color: #E4443F;
+            cursor: pointer;
+        }
+        table {
+            table-layout: fixed;
+            width: 100%;
+            padding-right:30px;
+        }
+        td {
+            width: 25%;
+            vertical-align: top;
+            padding-bottom: 40px;
+            padding-right:10px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .menu {
+            width: 970px;
+            margin-left: 125px;
+            margin-top: 200px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar img-container">
+    <img src="img/header_menu.png">
+    <div class="container">
+        <div class="topnav">
+            <a href="home.html">HOME</a>
+            <a style="padding-right:51px;" href="menu.html">MENU</a>
+            <a href="about.html">ABOUT</a>
+            <a style="padding-left:40px" href="events.html">EVENTS</a>
+        </div>
+    </div>
+</div>
+
+<div class="button" id="foodmenu-button">
+    <a href="menu.html"><p class="button">FOOD MENU</p></a>
+</div>
+
+
+
+
+<!--TAP LIST START-->
+<div class="menu">
+    <table class="menu">
+        <tr>
+            <td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <h1>TAP LIST</h1>
+                <br>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>BELL'S - TWO HEARTED ALE</h2>
+                <p>ABV: 7.0%</p>
+            </td>
+            <td>
+                <h2>FAIR STATE - MIRROR UNIVERSITY HAZY IPA</h2>
+                <p>ABV: 7.0%</p>
+            </td>
+            <td>
+                <h2>FINNEGANS - IRISH ALE</h2>
+                <p>ABV: 4.8%</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>GUINNESS</h2>
+                <p>ABV: 4.2%</p>
+            </td>
+            <td>
+                <h2>HAMM'S</h2>
+                <p>ABV: 4.7%</p>
+            </td>
+            <td>
+                <h2>HARP</h2>
+                <p>ABV: 5.0%</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>INDEED - LILIKO'I</h2>
+                <p>ABV: 8.5%</p>
+            </td>
+            <td>
+                <h2>INSIGHT - THE WISDOM OF OLD ONE-EYE</h2>
+                <p>ABV: 5.6%</p>
+            </td>
+            <td>
+                <h2>LAGUNITAS - PILS</h2>
+                <p>ABV: 6.0%</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>MIKKELLER - DID YOU MIST ME</h2>
+                <p>ABV: 6.8%</p>
+            </td>
+            <td>
+                <h2>MILLER LITE</h2>
+                <p>ABV: 4.5%</p>
+            </td>
+            <td>
+                <h2>PERONI NASTRO AZZURRO</h2>
+                <p>ABV: 5.1%</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>GRAIN BELT PREMIUM</h2>
+                <p>ABV: 4.6%</p>
+            </td>
+            <td>
+                <h2>SMIRNOFF SELTZER</h2>
+                <p>ABV: 4.5%</p>
+            </td>
+            <td>
+                <h2>SMITHWICK'S</h2>
+                <p>ABV: 5.0%</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>SOCIABLE - RUSTY CHAIN</h2>
+                <p>ABV: 6.6%</p>
+            </td>
+            <td>
+                <h2>SUMMIT - EPA</h2>
+                <p>ABV: 5.3%</p>
+            </td>
+            <td>
+                <h2>SUMMIT - OATMEAL STOUT NITRO</h2>
+                <p>ABV: 5.2%</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>SURLY - FURIOUS</h2>
+                <p>ABV: 6.2%</p>
+            </td>
+            <td>
+                <h2>SURLY - HELL LAGER</h2>
+                <p>ABV: 5.0%</p>
+            </td>
+            <td>
+                <h2>SURLY - TODD THE AXE MAN</h2>
+                <p>ABV: 7.2%</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <h2>SURLY DARKNESS 2019</h2>
+                <p>ABV: 12.0%</p>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
