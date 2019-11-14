@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+    <link rel="shortcut icon" href="img/favicon-k.ico"/>
+    <style>
+        *{
+            margin:0;
+            box-sizing: border-box;
+        }
+        html{
+            background: url(img/sitting_at_bar_copy.png) no-repeat center center fixed;
+            background-size: cover;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: white;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+            opacity: 0.6;
+        }
+        .navbar2 {
+            overflow: hidden;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+        }
+        nav {
+            width: 1000px;
+            height: 90px;
+            background-color: white;
+            color: white;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .img-container {
+            text-align: center;
+            display: block;
+            padding: 10px;
+        }
+        .container {
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            position: absolute;
+            margin-top: 200px;
+            color: red;
+            font-size: 90px;
+        }
+        .button{
+            width: 250px;
+            height: 75px;
+            text-align:center;
+            vertical-align: middle;
+            line-height: 75px;
+            font-family: Inconsolata;
+            font-size: 30px;
+            background-color: #545E1C;
+            color: white;
+            top: 550px;
+            position:fixed;
+            text-decoration:none;
+        }
+        #menu-button{
+            left: 275px;
+        }
+        #activities-button{
+            left: 587.5px;
+        }
+        #about-button{
+            left: 900px;
+        }
+        .button:hover{
+            text-decoration: none;
+            color: #F8EF32;
+            cursor: pointer;
+        }
+        .button:active{
+            text-decoration: none;
+            color: #E4443F;
+            cursor: pointer;
+        }
+        .social-media{
+            position: fixed;
+            bottom: 15px;
+        }
+        #phone{
+            left: 587.5px;
+        }
+        #mail{
+            left:657.5px;
+        }
+        #facebook{
+            left:727.5px;
+        }
+        #twitter{
+            left:797.5px;
+        }
+    </style>
+</head>
+<body>
+
+<!--HEADER-->
+<div class="navbar img-container">
+    <img src="img/header.png" alt="Keegan's Logo" height="100px" >
+</div>
+
+<div class="navbar2 img-container">
+    <img src="img/header.png" alt="Keegan's Logo" height="100px" >
+</div>
+<!--END HEADER-->
+
+
+
+<!--KEEGAN'S NAME-->
+<div class="container">
+    <img src="img/name_keegans.png" alt="Text reading 'Keegan's Irish Pub'">
+</div>
+<!--END KEEGAN'S NAME-->
+
+
+
+<!--SITE NAVIGATION BUTTONS-->
+<div class="button" id="menu-button">
+    <a href="menu.html"><p class="button">MENU</p></a>
+</div>
+
+<div class="button" id="activities-button">
+    <a href="events.html"><p class="button">EVENTS</p></a>
+</div>
+
+<div class="button" id="about-button">
+    <a href="about.html"><p class="button">ABOUT</p></a>
+</div>
+<!--END SITE NAVIGATION BUTTONS-->
+
+
+<!--SOCIAL MEDIA BUTTONS-->
+<div class="social-media" id="phone">
+    <a href="tel:6122520880"><img src="img/phone.png" alt="Phone" height="40px" width="40px"></a>
+</div>
+
+<div class="social-media" id="mail">
+    <a href="mailto:info@keeganspub.com"><img src="img/mail.png" alt="E-mail" height="40px" width="40px"></a>
+</div>
+
+<div class="social-media" id="facebook">
+    <a href="https://www.facebook.com/keeganspub"><img src="img/facebook.png" alt="Facebook" height="40px" width="40px"></a>
+</div>
+
+<div class="social-media" id="twitter">
+    <a href="https://twitter.com/keeganspub"><img src="img/twitter.png" alt="Twitter" height="40px" width="40px"></a>
+</div>
+<!--END SOCIAL MEDIA BUTTONS-->
+
+</body>
+</html>

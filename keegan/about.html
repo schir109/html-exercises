@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT</title>
+    <link rel="shortcut icon" href="img/favicon-k.ico"/>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: #000000;
+            overflow: scroll;
+        }
+        h1{
+            font-family:Inconsolata;
+            font-size:45px;
+            color: white;
+            font-weight: normal;
+            color:white;
+        }
+
+        h2 {
+            font-family: Montserrat;
+            font-size: 20px;
+            color: white;
+            font-weight: normal;
+        }
+        h3{
+            font-family: Montserrat;
+            font-size: 15px;
+            color:white;
+            font-weight:lighter;
+            text-align:center;
+        }
+        h4{
+            font-family: Inconsolata;
+            font-size: 25px;
+            font-weight:normal;
+            color:white;
+        }
+        p {
+            font-family: Montserrat;
+            font-size: 15px;
+            color: white;
+            font-weight: lighter;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #1c1c1c;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 1440px; /* Full width */
+            z-index: 3;
+            text-align: center;
+            display: block;
+            padding: 10px;
+        }
+        .container {
+            position: fixed;
+            width: auto;
+            top: 10px;
+            left: 290px;
+            right: 100px;
+            font-size: 30px;
+            font-family: Inconsolata;
+            font-weight: normal;
+            padding-top: 28px;
+        }
+        .navbar a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            text-decoration: none;
+            padding-left: 100px;
+            padding-right: 30px;
+
+        }
+        .navbar a:hover {
+            color: #F8EF32;
+        }
+        #about-us{
+            width: 490px;
+            left: 780px;
+            top:210px;
+            position: relative;
+        }
+        #quote{
+            width: 490px;
+            left: 780px;
+            top:175px;
+            position: relative;
+        }
+        .mySlides {display:none;
+        }
+        .slide-container{
+            position: absolute;
+            top: 175px;
+            left: 180px;
+            z-index: 1;
+        }
+        .map-container{
+            position: absolute;
+            top: 575px;
+            left: 180px;
+        }
+        th{
+            font-weight: normal;
+        }
+        a:hover{
+            text-decoration: none;
+            color: #F8EF32;
+            cursor: pointer;
+        }
+        a:active{
+            text-decoration: none;
+            color: #E4443F;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <img src="img/header_menu.png">
+    <table class="container">
+        <tr>
+            <th> <a href="home.html">HOME</a></th>
+            <th> <a href="menu.html">MENU</a></th>
+            <th> <a href="about.html">ABOUT</a></th>
+            <th> <a href="events.html">EVENTS</a></th>
+        </tr>
+    </table>
+</div>
+
+
+
+<div id="quote">
+    <h4>Located in the heart of the St. Anthony East neighborhood,
+        Keegan’s Irish Pub offers a unique atmosphere not available
+        anywhere else in Minneapolis. </h4>
+</div>
+
+<div class="slide-container">
+    <img class="mySlides" src="img/cheers.png" style="width:531px">
+    <img class="mySlides" src="img/customers.png" style="width:531px">
+    <img class="mySlides" src="img/pub.png" style="width:531px">
+</div>
+
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 4000); // Change image every 2 seconds
+    }
+</script>
+
+<div id="about-us">
+    <h1>ABOUT US</h1>
+    <br>
+    <p>The story of Keegan’s Irish Pub begins in Ireland.
+        <br><br>
+        The pub was designed and built by  the O’Sullivans, a third-generation
+        family of Irish pub builders from Waterford, Ireland. They came over in 2001,
+        saw the space, and then replicated a Victorian-style pub. It was built in Ireland
+        and shipped to St. Paul, three months before opening.
+        <br><br>
+        In the time since, we have taken great pride in our offerings, especially our
+        perfect pints. Keegan’s Pub is honored year after year by Guinness for the way
+        we pour and serve our beer. All our Guinness comes from the St. James Gate brewery
+        in Dublin, Ireland and we pour it at the right temperature with the right nitrogen
+        to CO2 mixture.
+        <br><br>
+        Our perfect pours don’t stop with Guinness. We were honored in 2008 by Citysbest.AOL
+        for having the Best Beer in the Twin Cities.
+        <br><br>
+        Terry and Virginia Keegan, Marty Neumann and the entire staff welcome you to stop by,
+        enjoy good food and drink and, in good Irish tradition, entertain yourself by practicing
+        the fine art of conversation. </p>
+    <br><br><br><br>
+    <h1>CONNECT WITH US</h1>
+    <br>
+    <p>
+        <strong>Phone:</strong><a href="tel:6122520880"> 612-252-0880</a>
+        <br><br>
+        <strong>Email:</strong><a href="mailto:info@keeganspub.com"> info@keeganspub.com</a>
+    </p>
+
+
+
+</div>
+
+<div class="google_map map-container" style="margin-bottom:25px;">
+    <h1 style="margin-bottom:25px;">FIND US</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2821.7993836828296!2d-93.25902238474661!3d44.98838637308718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32d79293c2967%3A0xfd375b4c42637f92!2sKeegan&#39;s%20Pub!5e0!3m2!1sen!2sus!4v1570634386308!5m2!1sen!2sus"
+            width="531" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+    </div>
+
+</body>
+</html>

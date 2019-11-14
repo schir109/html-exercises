@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MENU</title>
+    <link rel="shortcut icon" href="img/favicon-k.ico"/>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-image: url("img/pattern2.jpg");
+            overflow: visible;
+        }
+        h1{
+            font-family:Inconsolata;
+            font-size:45px;
+            color: white;
+            font-weight: normal;
+            text-align:center;
+            color:white;
+        }
+        h2 {
+            font-family: Montserrat;
+            font-size: 20px;
+            color: white;
+            font-weight: normal;
+        }
+        h3{
+            font-family: Montserrat;
+            font-size: 15px;
+            color:white;
+            font-weight:lighter;
+            text-align:center;
+        }
+        h4{
+            font-family:Inconsolata;
+            font-size:80px;
+            color: white;
+            font-weight: 500;
+            text-align:center;
+            color:white;
+        }
+        p {
+            font-family: Montserrat;
+            font-size: 15px;
+            color: white;
+            font-weight: lighter;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #1c1c1c;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 1440px; /* Full width */
+            z-index: 3;
+            text-align: center;
+            display: block;
+            padding: 10px;
+        }
+        .container {
+            position: fixed;
+            width: auto;
+            top: 10px;
+            left: 290px;
+            right: 100px;
+            font-size: 30px;
+            font-family: Inconsolata;
+            font-weight: normal;
+            padding-top: 28px;
+        }
+        .navbar a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            text-decoration: none;
+            padding-left: 100px;
+            padding-right: 30px;
+
+        }
+        .navbar a:hover {
+            color: #F8EF32;
+        }
+        .title{
+            width: 575px;
+            height: 75px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 75px;
+            color: white;
+            top: 255px;
+            position: absolute;
+            z-index:1;
+            margin: 0 auto;
+            left: 430px;
+        }
+        .button {
+            width: 230px;
+            height: 35px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 35px;
+            font-family: Inconsolata;
+            font-size: 30px;
+            color: white;
+            top: 85px;
+            position: absolute;
+            z-index:1;
+            margin: 0 auto;
+            background-color: #545E1C;
+        }
+        #taplist-button {
+            left: 602.5px;
+        }
+        .button:hover {
+            text-decoration: none;
+            color: #F8EF32;
+            cursor: pointer;
+        }
+        .button:active {
+            text-decoration: none;
+            color: #E4443F;
+            cursor: pointer;
+        }
+        table {
+            table-layout: fixed;
+            width: 100%;
+            padding-right:30px;
+        }
+        td {
+            width: 25%;
+            vertical-align: top;
+            padding-bottom: 40px;
+            padding-right:10px;
+            padding-left: 10px;
+            padding-top:10px;
+        }
+        .menu {
+            width: 970px;
+            margin-left: 125px;
+            color: white;
+            top:150px;
+            position: relative;
+        }
+        th{
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <img src="img/header_menu.png">
+    <table class="container">
+        <tr>
+            <th> <a href="home.html">HOME</a></th>
+            <th> <a href="menu.html">MENU</a></th>
+            <th> <a href="about.html">ABOUT</a></th>
+            <th> <a href="events.html">EVENTS</a></th>
+        </tr>
+    </table>
+</div>
+
+<div class="title">
+    <h4>FOOD MENU</h4>
+
+</div>
+
+
+<div class="button" id="taplist-button">
+    <a href="taplist.html"><p class="button">VIEW TAP LIST</p></a>
+</div>
+
+
+
+
+<!--FOOD MENU START-->
+
+<!--APPETIZERS-->
+<div class="menu">
+    <table class="menu">
+        <tr>
+            <td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <h1>APPETIZERS</h1>
+                <br>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>CHEESE PINTS</h2>
+                <br>
+                <p>Beer-battered cheddar cheese baked
+                    and served with marinara.</p>
+                <br>
+                <p>9.99</p>
+            </td>
+            <td>
+                <h2>FISH BITES</h2>
+                <br>
+                <p>Bite-sized pieces of our beer-battered Pollock
+                    served with red pepper aioli sauce.</p>
+                <br>
+                <p>10.99</p>
+            </td>
+            <td>
+                <h2>CHICKEN TENDERS</h2>
+                <br>
+                <p>Three generous-sized, battered, deep-fried chicken
+                    fingers served with chips and tasty barbecue sauce
+                    or ranch dressing.</p>
+                <br>
+                <p>9.99</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>CHICKEN WINGS</h2>
+                <br>
+                <p>Choice of Caribbean, Korean, Original Buffalo or
+                    caramelized honey balsamic vinegar sauce. Served
+                    with crisp celery and choice of dressing.</p>
+                <br>
+                <p>11.99</p>
+            </td>
+            <td>
+                <h2>JUMBO PRETZELS</h2>
+                <br>
+                <p>Two large oven-baked pretzel served with spicy mustard.</p>
+                <br>
+                <p>7.99</p>
+                <br>
+                <p>Add nacho cheese: 1.50</p>
+            </td>
+            <td>
+                <h2>IRISH POUTINE</h2>
+                <br>
+                <p>Crispy wedge fries covered with cheese curds, corned beef
+                    and smothered with gravy.</p>
+                <br>
+                <p>12.99</p>
+            </td>
+    </table>
+</div>
+
+<!--SOUPS AND SALADS-->
+<div class="menu">
+    <table class="menu">
+        <tr>
+            <td>
+            </td>
+            <td>
+                <h1>SOUPS & SALADS</h1>
+                <br>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>POTATO AND LEEK SOUP</h2>
+                <br>
+                <p>4.99</p>
+            </td>
+            <td>
+                <h2>ROASTED RED PEPPER W/ SMOKED GOUDA SOUP</h2>
+                <br>
+                <p>4.99</p>
+            </td>
+            <td>
+                <h2>BEER CHEESE SOUP</h2>
+                <br>
+                <p>4.99</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>CHILI</h2>
+                <br>
+                <p> A traditional take on your favorite comfort food like
+                    you remember as a kid.</p>
+                <br>
+                <p>5.99</p>
+                <br>
+                <p>Add cheese and onions: 0.99</p>
+            </td>
+            <td>
+                <h2>BUFFALO CHICKEN SALAD</h2>
+                <br>
+                <p>Grilled chicken, sliced and layered on top of crisp lettuce,
+                    shredded co-jack cheese, tomatoes, onion, hard-boiled egg and
+                    your choice of dressing.</p>
+                <br>
+                <p>9.99</p>
+            </td>
+            <td>
+                <h2>SOUTHWESTERN CHICKEN SALAD</h2>
+                <br>
+                <p>Grilled chicken breast served on a bed of lettuce with tomatoes,
+                    red onions, cheddar and Monterey Jack cheese, corn and black bean
+                    pico de Gallo. Served with Picante pepper Ranch Dressing.</p>
+                <br>
+                <p>9.99</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>ORANGE WALNUT CHICKEN SALAD</h2>
+                <br>
+                <p>Grilled chicken breast layered on a bed of spinach with red onions,
+                    walnuts, mandarin oranges and blue cheese crumbles. Served with raspberry
+                    dressing.</p>
+                <br>
+                <p>9.99</p>
+            </td>
+            <td>
+                <h2>SPINACH STEAK SALAD</h2>
+                <br>
+                <p>A flat iron steak cooked to order, sliced and laid on top of a bed of
+                    spinach with red onions, tomatoes, roasted red peppers and our house
+                    made balsamic vinaigrette on the side.</p>
+                <br>
+                <p>13.99</p>
+            </td>
+            <td>
+                <h2>WEDGE SALAD</h2>
+                <br>
+                <p>Wedge of crisp lettuce cut and topped with bacon, tomato, red onion,
+                    blue cheese and topped with your choice of dressing.</p>
+                <br>
+                <p>5.99</p>
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+<!--PUB FAVORITES-->
+<div class="menu">
+    <table class="menu">
+        <tr>
+            <td>
+            </td>
+            <td>
+                <h1>PUB FAVORITES</h1>
+                <br>
+                <h3>All sandwiches are served with crisps (home made potato chips).
+                    Chips (wedge fries) or coleslaw may be substituted for 1.00
+                    Fruit is available for 2.00</h3>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>POTATO AND LEEK SOUP</h2>
+                <br>
+                <p>4.99</p>
+            </td>
+            <td>
+                <h2>ROASTED RED PEPPER W/ SMOKED GOUDA SOUP</h2>
+                <br>
+                <p>4.99</p>
+            </td>
+            <td>
+                <h2>BEER CHEESE SOUP</h2>
+                <br>
+                <p>4.99</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>CHILI</h2>
+                <br>
+                <p> A traditional take on your favorite comfort food like
+                    you remember as a kid.</p>
+                <br>
+                <p>5.99</p>
+                <br>
+                <p>Add cheese and onions: 0.99</p>
+            </td>
+            <td>
+                <h2>BUFFALO CHICKEN SALAD</h2>
+                <br>
+                <p>Grilled chicken, sliced and layered on top of crisp lettuce,
+                    shredded co-jack cheese, tomatoes, onion, hard-boiled egg and
+                    your choice of dressing.</p>
+                <br>
+                <p>9.99</p>
+            </td>
+            <td>
+                <h2>SOUTHWESTERN CHICKEN SALAD</h2>
+                <br>
+                <p>Grilled chicken breast served on a bed of lettuce with tomatoes,
+                    red onions, cheddar and Monterey Jack cheese, corn and black bean
+                    pico de Gallo. Served with Picante pepper Ranch Dressing.</p>
+                <br>
+                <p>9.99</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>ORANGE WALNUT CHICKEN SALAD</h2>
+                <br>
+                <p>Grilled chicken breast layered on a bed of spinach with red onions,
+                    walnuts, mandarin oranges and blue cheese crumbles. Served with raspberry
+                    dressing.</p>
+                <br>
+                <p>9.99</p>
+            </td>
+            <td>
+                <h2>SPINACH STEAK SALAD</h2>
+                <br>
+                <p>A flat iron steak cooked to order, sliced and laid on top of a bed of
+                    spinach with red onions, tomatoes, roasted red peppers and our house
+                    made balsamic vinaigrette on the side.</p>
+                <br>
+                <p>13.99</p>
+            </td>
+            <td>
+                <h2>WEDGE SALAD</h2>
+                <br>
+                <p>Wedge of crisp lettuce cut and topped with bacon, tomato, red onion,
+                    blue cheese and topped with your choice of dressing.</p>
+                <br>
+                <p>5.99</p>
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+
+</body>
+</html>
