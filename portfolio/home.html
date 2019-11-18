@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiona Schiro - Home</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: #ffffff;
+            overflow: scroll;
+        }
+        h1{
+            font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            font-size: 75px;
+            text-align: center;
+        }
+        /* The navigation bar */
+        .navbar {
+            overflow: hidden;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+        }
+
+        /* Links inside the navbar */
+        .navbar a {
+            float: left;
+            display: block;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+            font-weight: lighter;
+            font-size: 20px;
+        }
+
+        /* Change background on mouse-over */
+        .navbar a:hover {
+            background: lavender;
+            color: grey;
+        }
+
+        /* Main content */
+        .main {
+            margin-top: 50px; /* Add a top margin to avoid content overlay */
+        }
+        .mySlides {
+            display:none;
+        }
+        .slide-container{
+            top: 40px;
+            z-index: 1;
+            margin: 0 auto;
+            width:900px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+</div>
+<h1 class="main">Fiona Schiro</h1>
+
+<div class="slide-container">
+    <img class="mySlides" src="perspective.jpg" style="width:800px; margin:0 auto;">
+    <img class="mySlides" src="rugby.jpg" style="width:800px; margin:0 auto;">
+    <img class="mySlides" src="rugby2.jpg" style="width:800px; margin:0 auto;">
+    <img class="mySlides" src="color.jpg" style="width:800px; margin:0 auto;">
+
+</div>
+
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 4000); // Change image every 2 seconds
+    }
+</script>
+</body>
+</html>
